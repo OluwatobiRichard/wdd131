@@ -1,11 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Ojo Oluwatobi</title>
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals course landing page for Ojo Olwatobi Richard. Learn about my background, interests, web development resources, and course projects.">
+    <meta name="author" content="Ojo Olwatobi Richard">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD 131- Ojo Oluwatobi</h1>
+
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/in/ojo-oluwatobi-62264b321/" target="_blank" rel="noopener">Linkedin</a>
+            <a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank"
+                rel="noopener">Scripture</a>
+            <a href="#" target="_blank" rel="noopener">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Ojo Olwatobi Richard</h1>
+        <div class="card-grid">
+            <!-- About Me Card -->
+            <section class="card about-card">
+                <h2>About Me</h2>
+                <div class="about-me">
+                    <div class="about-content">
+                        <div class="intro">
+                            <p>My name is Ojo Oluwatobi Richard. I am Brigham Young University student passionate about
+                                technology, web development, and learning new skills.
+                                I enjoy exploring creative ideas, building websites,
+                                and developing solutions that can make a positive
+                                difference.</p>
+                            <p>I am currently studying web development and looking
+                                forward to improving my HTML, CSS, and JavaScript
+                                skills throughout this course.</p>
+                        </div>
+                        <img src="images/mynew.jpeg" alt="Oluwatobi" class="profile-image" width="180" height="220">
+                        <h3>FCT Abuja, Nigeria</h3>
+                    </div>
+                    <div class="location-content">
+                        <figure>
+                            <img src="images/abuja.jpg" alt="Beautiful view of Nigeria" width="160" height="100">
+                            <figcaption>Central Area, FCT Abuja, Nigeria</figcaption>
+                        </figure>
+                        <p>Nigeria is a country in West Africa with a rich cultural
+                            heritage and diverse population. It is known for its
+                            vibrant cities, natural resources, creativity, music,
+                            food, and entrepreneurial spirit. I am proud to learn,
+                            grow, and contribute through technology and education.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Web Development Resources Card -->
+            <section class="card resources-card">
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+                    <li><a href="https://css-tricks.com/" target="_blank" rel="noopener">CSS-Tricks</a></li>
+                    <li><a href="https://web.dev/" target="_blank" rel="noopener">Web.dev</a></li>
+                    <li><a href="https://www.udemy.com/" target="_blank" rel="noopener">Udemy</a></li>
+                    <li><a href="https://picsum.photos/" target="_blank" rel="noopener">Lorem ipsum dolor</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>
+            &copy;<span id="currentyear"></span>
+            Ojo Oluwatobi Richard
+            | FCT Abuja, Nigeria
+        </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>

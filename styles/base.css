@@ -1,0 +1,180 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: #222;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: #164e70;
+    color: white;
+}
+
+#course-title {
+    display: block;
+    text-align: center;
+    padding: 1.2rem 1rem;
+    font-family: "Montserrat" sans-serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #292929;
+    min-height: 55px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat" sans-serif;
+    font-weight: 500;
+    padding: 0.9rem 1.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #8f7f5b;
+    color: #111;
+}
+
+/*Main*/
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.3rem;
+    margin: 1rem 0 1.5rem;
+    color: #222;
+}
+
+/*HOLY GRAIL / GRID LAYOUT*/
+.card-grid {
+    display: grid;
+    grid-row: minmax(0, 2.3fr) minmax(250px, 1fr);
+    gap: 0.75rem
+}
+
+/*Card*/
+.card {
+    border: 1px solid #b9c2c9;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-sizing: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    margin: 0;
+    padding: 0.65rem 1rem;
+    text-align: center;
+    background-color: #164e70;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.05rem;
+}
+
+/*ABOUT ME*/
+.about-me {
+    display: grid;
+    grid-template-columns: 1fr 1/4fr;
+    gap: 10px;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 160px;
+    gap: 1rem;
+    padding: 1rem 1.2rem 0;
+    align-items: start;
+}
+
+.intro p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.profile-image {
+    width: 160px;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+}
+
+.about-card h3 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    margin: 0.5rem 1rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid #aaa;
+}
+
+.location-content {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 1rem;
+    align-items: center;
+    padding: 0 1rem 1rem;
+}
+
+.location-content figure {
+    margin: 0;
+    text-align: center;
+}
+
+.location-content figure img {
+    width: 145px;
+    height: 90px;
+    object-fit: cover;
+    border: 1px solid #aaa;
+}
+
+.location-content figcaption {
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+.location-content p {
+    margin: 0;
+}
+
+/* ------------------------------
+   WEB DEVELOPMENT RESOURCES
+------------------------------ */
+
+.resources-card ul {
+    padding: 1.5rem 2.5rem;
+    margin: 0;
+}
+
+.resources-card li {
+    margin-bottom: 0.35rem;
+}
+
+.resources-card a {
+    color: #0645ad;
+}
+
+.resources-card a:hover {
+    color: #164e70;
+    text-decoration: none;
+}
