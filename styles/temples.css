@@ -1,35 +1,93 @@
-/* ---------- Desktop (keep this LAST) ---------- */
+/* ---------- Desktop: logo left, nav in a row on the right ---------- */
 @media screen and (min-width: 768px) {
 
     header {
         flex-wrap: nowrap;
+        /* keep title and nav on the same line */
+        justify-content: space-between;
+        align-items: center;
     }
 
     #menu {
         display: none;
+        /* hide the hamburger */
     }
 
     header nav {
         display: block;
+        /* always visible on desktop */
         flex-basis: auto;
         width: auto;
         margin-left: auto;
+        /* pushes the nav to the right */
     }
 
     header .navigation {
+        display: flex;
         flex-direction: row;
+        /* links side by side */
         align-items: center;
         gap: 1.5rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    header .navigation li {
+        display: list-item;
+        /* undoes any leftover display: none */
     }
 
     header .navigation a {
+        display: block;
         padding: 0.5rem;
         white-space: nowrap;
+        /* stops "Home" etc. from wrapping */
     }
 
-    .gallery {
-        grid-template-columns: repeat(3, 1fr);
-        /* 3 columns on larger screens */
-        gap: 20px;
+   
+}/* ---------- Desktop: logo left, nav in a row on the right ---------- */
+@media screen and (min-width: 768px) {
+
+    header {
+        flex-wrap: nowrap;
+        /* keep title and nav on the same line */
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #menu {
+        display: none;
+        /* hide the hamburger */
+    }
+
+    header nav {
+        display: block;
+        /* always visible on desktop */
+        flex-basis: auto;
+        width: auto;
+        margin-left: auto;
+        /* pushes the nav to the right */
+    }
+
+    header .navigation {
+        display: flex;
+        flex-direction: row;
+        /* links side by side */
+        align-items: center;
+        gap: 1.5rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    header .navigation li {
+        display: list-item;
+        /* undoes any leftover display: none */
+    }
+
+    header .navigation a {
+        display: block;
+        padding: 0.5rem;
+        white-space: nowrap;
+        /* stops "Home" etc. from wrapping */
     }
 }
