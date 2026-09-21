@@ -38,12 +38,5 @@
         padding: 0.5rem;
         white-space: nowrap;
     }
-        
-}
 
-/* Mobile Gallery */
-@media screen and (max-width: 767px) {
-    .gallery {
-        grid-template-columns: 1fr;
-    }
 }
