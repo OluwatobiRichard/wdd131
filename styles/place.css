@@ -76,6 +76,10 @@ picture img {
     align-items: center;
 }
 
+.card-weather h2::after {
+    content: " ";
+}
+
 .card-data ul,
 .card-weather ul {
     list-style: none;
@@ -130,6 +134,7 @@ footer p {
         color: #1f1f1f;
         margin: 0 0 1rem;
     }
+
     .card-weather h2 {
         flex-direction: column;
     }
