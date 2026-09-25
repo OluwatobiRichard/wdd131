@@ -115,7 +115,7 @@ footer p {
 
 @media (max-width: 768px) {
     picture img {
-        border-bottom: 5px solid #d62828;
+        border-bottom: 10px solid #d62828;
     }
 
     .card-data,
