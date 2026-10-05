@@ -1,0 +1,9 @@
+:root {
+    --primary-color: #0A192F;
+    --secondary-color: #F97316;
+    --background-color: #FFFFFF;
+    --section-color: #F3F4F6;
+
+    --heading-font: "Poppins", sans-serif;
+    --body-font: "Roboto", sans-serif;
+}
