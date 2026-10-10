@@ -1,0 +1,348 @@
+
+:root {
+    --wine-dark: #2D032B;
+    --body-bg: #D5CDD5;
+    --field-bg: #FFFFFF;
+    --field-border: #B7AEB7;
+    --text-dark: #1A1A1A;
+    --text-white: #FFFFFF;
+    --button-bg: #EFEFEF;
+    --button-border: #9E9E9E;
+    --link-blue: #2F5DD4;
+
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 1.5rem 1rem;
+    background-color: #f3f1f3;
+    font-family: var(--body-font);
+    color: var(--text-dark);
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+header {
+    background-color: var(--wine-dark);
+    padding: 1.1rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    color: var(--text-white);
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+main {
+    background-color: var(--body-bg);
+    padding: 1.5rem 1.25rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+label {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+}
+
+.optional-note {
+    font-weight: 500;
+    font-style: italic;
+    color: var(--link-blue);
+    font-size: 0.85rem;
+}
+
+select,
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    background-color: var(--field-bg);
+    border: 1px solid var(--field-border);
+    border-radius: 6px;
+    padding: 0.6rem 0.7rem;
+    font-family: var(--body-font);
+    font-size: 0.95rem;
+    color: var(--text-dark);
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+    outline: 2px solid var(--wine-dark);
+    outline-offset: 1px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+.stars-fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.stars-fieldset legend {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0;
+}
+
+.stars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.star-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.star-option label {
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    color: var(--text-dark);
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.star-option input[type="radio"] {
+    appearance: none;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    border: 2px solid var(--field-border);
+    background-color: var(--field-bg);
+    cursor: pointer;
+    margin: 0;
+}
+
+.star-option input[type="radio"]:checked {
+    border-color: var(--wine-dark);
+    background-color: var(--wine-dark);
+    box-shadow: inset 0 0 0 3px var(--field-bg);
+}
+
+.features {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.features legend {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0;
+    margin-bottom: 0.3rem;
+}
+
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.checkbox-row input[type="checkbox"] {
+    appearance: none;
+    width: 1.1rem;
+    height: 1.1rem;
+    border: 1px solid var(--field-border);
+    border-radius: 3px;
+    background-color: var(--field-bg);
+    cursor: pointer;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.checkbox-row input[type="checkbox"]:checked {
+    background-color: var(--wine-dark);
+    border-color: var(--wine-dark);
+}
+
+.checkbox-row input[type="checkbox"]:checked::after {
+    content: "✓";
+    display: block;
+    color: var(--text-white);
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    text-align: center;
+}
+
+.checkbox-row label {
+    font-weight: 400;
+    font-size: 0.95rem;
+}
+
+.submit-btn {
+    background-color: var(--button-bg);
+    border: 1px solid var(--button-border);
+    border-radius: 8px;
+    padding: 0.8rem;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover,
+.submit-btn:focus-visible {
+    background-color: #e2e2e2;
+}
+
+
+footer {
+    background-color: var(--wine-dark);
+    color: var(--text-white);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+footer p {
+    margin: 0.2rem 0;
+}
+
+.confirmation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.success-badge {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--wine-dark);
+    color: var(--text-white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.confirmation h2 {
+    margin: 0;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--text-dark);
+}
+
+.confirmation p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.review-count strong {
+    color: var(--wine-dark);
+    font-family: var(--heading-font);
+}
+
+.cta-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    background-color: var(--button-bg);
+    border: 1px solid var(--button-border);
+    border-radius: 8px;
+    padding: 0.7rem 1.4rem;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.cta-link:hover,
+.cta-link:focus-visible {
+    background-color: #e2e2e2;
+}
+
+@media screen and (min-width: 700px) {
+    .card {
+        max-width: 560px;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    main {
+        padding: 2rem 2.25rem;
+    }
+
+    .star-option label {
+        font-size: 1rem;
+    }
+
+    .submit-btn {
+        font-size: 1.05rem;
+        padding: 0.9rem;
+    }
+
+    .confirmation h2 {
+        font-size: 1.45rem;
+    }
+
+    .confirmation p {
+        font-size: 1rem;
+    }
+
+    .cta-link {
+        padding: 0.85rem 1.8rem;
+        font-size: 1.05rem;
+    }
+}
