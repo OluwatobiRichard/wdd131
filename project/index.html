@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech_Tee </title>
+    <title>Tech_Tee Fitness Hub</title>
     <meta name="description" content="WDD 131 – Local Gym Website for Ojo Olwatobi Richard.">
     <meta name="author" content="Ojo Olwatobi Richard">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +12,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/" defer></script>
 </head>
+
 
 <body>
     <!--Header / Navigation -->
@@ -147,11 +150,12 @@
                 </div>
             </form>
         </section>
+
         <!-- Training Programs -->
         <section id="programs" class="programs">
             <p class="eyebrow">Engineered Pathways</p>
             <h2>Training Programs</h2>
-        
+
             <div class="card-grid">
                 <article class="program-card">
                     <span class="badge">Strength</span>
@@ -164,7 +168,7 @@
                     </ul>
                     <p class="coach">Coach: Dave Miller, CSCS</p>
                 </article>
-        
+
                 <article class="program-card">
                     <span class="badge">Coaching</span>
                     <h3>Personal Training</h3>
@@ -176,7 +180,7 @@
                     </ul>
                     <p class="coach">Coach: Dr. Elena Santos, PT</p>
                 </article>
-        
+
                 <article class="program-card">
                     <span class="badge">Cardio</span>
                     <h3>Cardio Training</h3>
@@ -190,15 +194,17 @@
                 </article>
             </div>
         </section>
+
         <!-- Testimonials -->
         <section class="testimonials">
             <p class="eyebrow">Proven Results</p>
             <h2>Member Testimonials</h2>
-        
+
             <div class="card-grid">
                 <article class="testimonial-card">
                     <span class="badge">Strength Member</span>
-                    <p class="quote">"Tech_Tee replaced the ambiguity of my training with raw, measurable science. Added 40kg to
+                    <p class="quote">"Tech_Tee replaced the ambiguity of my training with raw, measurable science. Added
+                        40kg to
                         my deadlift in 16 weeks."</p>
                     <div class="testimonial-footer">
                         <div>
@@ -208,10 +214,11 @@
                         <span class="highlight-stat">+40kg Total</span>
                     </div>
                 </article>
-        
+
                 <article class="testimonial-card">
                     <span class="badge">Cardio &amp; Coaching</span>
-                    <p class="quote">"The heart-rate zone monitors and recovery suites transformed my stamina. The coaches know
+                    <p class="quote">"The heart-rate zone monitors and recovery suites transformed my stamina. The
+                        coaches know
                         the line between overload and recovery."</p>
                     <div class="testimonial-footer">
                         <div>
@@ -221,10 +228,11 @@
                         <span class="highlight-stat">Sub-3hr Marathon</span>
                     </div>
                 </article>
-        
+
                 <article class="testimonial-card">
                     <span class="badge">Pro Member</span>
-                    <p class="quote">"The 24/7 access and data-driven accountability keep me on track, even during 60-hour work
+                    <p class="quote">"The 24/7 access and data-driven accountability keep me on track, even during
+                        60-hour work
                         weeks."</p>
                     <div class="testimonial-footer">
                         <div>
@@ -241,28 +249,29 @@
         <section id="contact" class="contact">
             <p class="eyebrow">Connect With Us</p>
             <h2>Contact Tech_Tee</h2>
-        
+
             <div class="contact-grid">
                 <!-- Contact Form -->
                 <form class="contact-form" id="contactForm">
                     <h3>Send an Inquiry</h3>
-        
+
                     <div class="field">
                         <label for="contactName">Full Name *</label>
                         <input type="text" id="contactName" name="contactName" placeholder="Your full name" required>
                     </div>
-        
+
                     <div class="form-row">
                         <div class="field">
                             <label for="contactEmail">Email Address *</label>
-                            <input type="email" id="contactEmail" name="contactEmail" placeholder="you@example.com" required>
+                            <input type="email" id="contactEmail" name="contactEmail" placeholder="you@example.com"
+                                required>
                         </div>
                         <div class="field">
                             <label for="contactPhone">Phone Number *</label>
-                            <input type="tel" id="contactPhone" name="contactPhone" placeholder="+1 (555) 234-8900" required>
+                            <input type="tel" id="contactPhone" name="contactPhone" placeholder="1234" required>
                         </div>
                     </div>
-        
+
                     <div class="field">
                         <label for="contactProgram">Program of Interest</label>
                         <select id="contactProgram" name="contactProgram">
@@ -272,42 +281,42 @@
                             <option value="General Pass">General Membership</option>
                         </select>
                     </div>
-        
+
                     <div class="field">
                         <label for="contactMessage">Message</label>
                         <textarea id="contactMessage" name="contactMessage" rows="4"
                             placeholder="Tell us about your training goals..."></textarea>
                     </div>
-        
+
                     <button type="submit" class="btn btn-primary btn-full">Submit Inquiry</button>
-        
+
                     <p class="form-feedback" id="contactFeedback" hidden></p>
                 </form>
-        
+
                 <!-- Facility Info -->
                 <aside class="contact-info">
                     <div class="info-card">
                         <h3>Facility Directory</h3>
-        
+
                         <p>
                             <strong>HQ Location</strong><br>
                             104 F01, Kubwa, Abuja<br>
                             Floor 1–3, Tech District
                         </p>
-        
+
                         <p>
                             <strong>Operating Hours</strong><br>
                             Monday – Friday: 5:00 AM – 11:00 PM<br>
                             Saturday – Sunday: 6:00 AM – 9:00 PM
                         </p>
-        
+
                         <p>
                             <strong>Contact</strong><br>
                             +234-8144063982<br>
                             oluwatobirichard001@gmail.com
                         </p>
                     </div>
-        
+
                     <div class="info-card">
                         <h3>Current Floor Load</h3>
                         <p class="capacity-value">64% <span>Occupancy (128 / 200)</span></p>
@@ -320,6 +329,8 @@
             </div>
         </section>
     </main>
+
+    <!--Footer-->
     <footer>
         <p>
             &copy;<span id="currentyear"></span>
