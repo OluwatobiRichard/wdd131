@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech_Tee </title>
+    <meta name="description" content="WDD 131 – Local Gym Website for Ojo Olwatobi Richard.">
+    <meta name="author" content="Ojo Olwatobi Richard">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--Header / Navigation -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Tech_Tee Fitnes Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#membership">memberships</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="#membership" class="btn btn-primary">Join Now</a>
+
+    </header>
+    <main>
+        <!--Hero Section-->
+        <section id="home">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero.webp" alt="" width="500" height="250">
+            </picture>
+            <p class="eyebrow">Next-Gen Performance Labs</p>
+
+            <h1>Build Your <span class="highlight">Best Self</span></h1>
+
+            <p class="hero-text">
+                Transform your mind, body, and endurance with expert coaching,
+                biometric tracking, and cutting-edge facilities engineered for
+                real results.
+            </p>
+            <div class="hero-button">
+                <a href="#membership" class="btn btn-primary">Join Now</a>
+                <a href="#programs" class="btn btn-secondary">Explore Programs</a>
+            </div>
+
+            <!--Quick Stats-->
+            <div class="stat-row">
+                <span class="stat-label">Active Candence</span>
+                <span class="stat-value">98.4%</span>
+                <span class="stat-note">Target Milestone Rate</span>
+            </div>
+            <div class="stat-row">
+                <span class="stat-label">Elite Coaching</span>
+                <span class="stat-value">24/7</span>
+                <span class="stat-note">Biomechanic Analysis</span>
+            </div>
+            <div class="stat-row">
+                <span class="stat-label">Recovery Tech</span>
+                <span class="stat-value">Cryo &amp; Hydro</span>
+                <span class="stat-note">Integrated Modalities</span>
+            </div>
+            <div class="stat-row">
+                <span class="stat-label">Current Floor Load</span>
+                <span class="stat-value">64%</span>
+                <span class="stat-note">Main Arena, Metro City</span>
+            </div>
+        </section>
+
+        <!--About Us Section-->
+        <section id="about" class="about">
+            <div class="about-text">
+                <p class="eyebrow">Mission &amp; Discipline</p>
+                <h2>Engineered Around Human Output</h2>
+                <p>
+                    Tech_Tee Fitness Hub dismantles guesswork. Rooted in kinesiology,
+                    progressive overload protocols, and biometric feedback, our facility
+                    is built for those who treat physical conditioning as an uncompromising craft.
+                </p>
+                <div class="about-number">
+                    <div class="about-number">
+                        <span class="number">1,800+</span>
+                        <span class="number-label">Members Trained</span>
+                    </div>
+                    <div class="number-card">
+                        <span class="number">15,000 sq ft</span>
+                        <span class="number-label">Iron &amp; Cardio Floor</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-cards">
+                <article class="feature-card">
+                    <h3>Science-Based Protocols</h3>
+                    <p>Every set, rep, and split is backed by metabolic efficiency and movement science.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Elite Community</h3>
+                    <p>A supportive, zero-ego community pushing each other through every milestone.</p>
+                </article>
+                <article class="feature-card feature-card-wide">
+                    <h3>Modern Equipment</h3>
+                    <p>Olympic platforms, calibrated plates, rowers, and sprint tracks, all professionally maintained.
+                    </p>
+                </article>
+            </div>
+        </section>
+        <!-- BMI Calculator -->
+        <section class="bmi">
+            <div class="bmi-info">
+                <p class="eyebrow">Quick Check</p>
+                <h2>BMI Calculator</h2>
+                <p>Enter your weight and height to get an instant BMI estimate.</p>
+            </div>
+
+            <form class="bmi-form" id="bmiForm">
+                <div class="form-row">
+                    <div class="field">
+                        <label for="bmiWeight">Weight (kg)</label>
+                        <input type="number" id="bmiWeight" name="bmiWeight" placeholder="75" step="0.1" required>
+                    </div>
+                    <div class="field">
+                        <label for="bmiHeight">Height (cm)</label>
+                        <input type="number" id="bmiHeight" name="bmiHeight" placeholder="178" step="1" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-secondary btn-full">Calculate BMI</button>
+
+                <div class="bmi-result" id="bmiResultBox" hidden>
+                    <div>
+                        <span class="result-label">BMI Score</span>
+                        <span class="result-value" id="bmiScoreText">--</span>
+                    </div>
+                    <div>
+                        <span class="result-label">Category</span>
+                        <span class="result-value" id="bmiCatText">--</span>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <!-- Training Programs -->
+        <section id="programs" class="programs">
+            <p class="eyebrow">Engineered Pathways</p>
+            <h2>Training Programs</h2>
+        
+            <div class="card-grid">
+                <article class="program-card">
+                    <span class="badge">Strength</span>
+                    <h3>Strength Training</h3>
+                    <p>High-intensity lifting, power racks, and progressive overload tracking.</p>
+                    <ul class="program-stats">
+                        <li><strong>Duration:</strong> 60 min</li>
+                        <li><strong>Intensity:</strong> High</li>
+                        <li><strong>Avg. Burn:</strong> 650 kcal</li>
+                    </ul>
+                    <p class="coach">Coach: Dave Miller, CSCS</p>
+                </article>
+        
+                <article class="program-card">
+                    <span class="badge">Coaching</span>
+                    <h3>Personal Training</h3>
+                    <p>Dedicated 1-on-1 coaching, personalized nutrition plans, and milestone assessments.</p>
+                    <ul class="program-stats">
+                        <li><strong>Duration:</strong> 45 min</li>
+                        <li><strong>Intensity:</strong> Precision</li>
+                        <li><strong>Avg. Burn:</strong> 520 kcal</li>
+                    </ul>
+                    <p class="coach">Coach: Dr. Elena Santos, PT</p>
+                </article>
+        
+                <article class="program-card">
+                    <span class="badge">Cardio</span>
+                    <h3>Cardio Training</h3>
+                    <p>HIIT circuits, heart-rate zone training, and endurance conditioning.</p>
+                    <ul class="program-stats">
+                        <li><strong>Duration:</strong> 50 min</li>
+                        <li><strong>Intensity:</strong> Aerobic Peak</li>
+                        <li><strong>Avg. Burn:</strong> 820 kcal</li>
+                    </ul>
+                    <p class="coach">Coach: Jordan Lee, Endurance Specialist</p>
+                </article>
+            </div>
+        </section>
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <p class="eyebrow">Proven Results</p>
+            <h2>Member Testimonials</h2>
+        
+            <div class="card-grid">
+                <article class="testimonial-card">
+                    <span class="badge">Strength Member</span>
+                    <p class="quote">"Tech_Tee replaced the ambiguity of my training with raw, measurable science. Added 40kg to
+                        my deadlift in 16 weeks."</p>
+                    <div class="testimonial-footer">
+                        <div>
+                            <h4>Marcus Vance</h4>
+                            <span>Competitive Powerlifter</span>
+                        </div>
+                        <span class="highlight-stat">+40kg Total</span>
+                    </div>
+                </article>
+        
+                <article class="testimonial-card">
+                    <span class="badge">Cardio &amp; Coaching</span>
+                    <p class="quote">"The heart-rate zone monitors and recovery suites transformed my stamina. The coaches know
+                        the line between overload and recovery."</p>
+                    <div class="testimonial-footer">
+                        <div>
+                            <h4>Sophia Chen</h4>
+                            <span>Triathlete &amp; Marathoner</span>
+                        </div>
+                        <span class="highlight-stat">Sub-3hr Marathon</span>
+                    </div>
+                </article>
+        
+                <article class="testimonial-card">
+                    <span class="badge">Pro Member</span>
+                    <p class="quote">"The 24/7 access and data-driven accountability keep me on track, even during 60-hour work
+                        weeks."</p>
+                    <div class="testimonial-footer">
+                        <div>
+                            <h4>Devon Reed</h4>
+                            <span>Tech Director</span>
+                        </div>
+                        <span class="highlight-stat">12% Body Fat Lost</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <p class="eyebrow">Connect With Us</p>
+            <h2>Contact Tech_Tee</h2>
+        
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <form class="contact-form" id="contactForm">
+                    <h3>Send an Inquiry</h3>
+        
+                    <div class="field">
+                        <label for="contactName">Full Name *</label>
+                        <input type="text" id="contactName" name="contactName" placeholder="Your full name" required>
+                    </div>
+        
+                    <div class="form-row">
+                        <div class="field">
+                            <label for="contactEmail">Email Address *</label>
+                            <input type="email" id="contactEmail" name="contactEmail" placeholder="you@example.com" required>
+                        </div>
+                        <div class="field">
+                            <label for="contactPhone">Phone Number *</label>
+                            <input type="tel" id="contactPhone" name="contactPhone" placeholder="+1 (555) 234-8900" required>
+                        </div>
+                    </div>
+        
+                    <div class="field">
+                        <label for="contactProgram">Program of Interest</label>
+                        <select id="contactProgram" name="contactProgram">
+                            <option value="Strength Training">Strength Training</option>
+                            <option value="Personal Training">Personal Training</option>
+                            <option value="Cardio Training">Cardio &amp; HIIT</option>
+                            <option value="General Pass">General Membership</option>
+                        </select>
+                    </div>
+        
+                    <div class="field">
+                        <label for="contactMessage">Message</label>
+                        <textarea id="contactMessage" name="contactMessage" rows="4"
+                            placeholder="Tell us about your training goals..."></textarea>
+                    </div>
+        
+                    <button type="submit" class="btn btn-primary btn-full">Submit Inquiry</button>
+        
+                    <p class="form-feedback" id="contactFeedback" hidden></p>
+                </form>
+        
+                <!-- Facility Info -->
+                <aside class="contact-info">
+                    <div class="info-card">
+                        <h3>Facility Directory</h3>
+        
+                        <p>
+                            <strong>HQ Location</strong><br>
+                            104 F01, Kubwa, Abuja<br>
+                            Floor 1–3, Tech District
+                        </p>
+        
+                        <p>
+                            <strong>Operating Hours</strong><br>
+                            Monday – Friday: 5:00 AM – 11:00 PM<br>
+                            Saturday – Sunday: 6:00 AM – 9:00 PM
+                        </p>
+        
+                        <p>
+                            <strong>Contact</strong><br>
+                            +234-8144063982<br>
+                            oluwatobirichard001@gmail.com
+                        </p>
+                    </div>
+        
+                    <div class="info-card">
+                        <h3>Current Floor Load</h3>
+                        <p class="capacity-value">64% <span>Occupancy (128 / 200)</span></p>
+                        <div class="capacity-bar">
+                            <div class="capacity-bar-fill" style="width: 64%;"></div>
+                        </div>
+                        <p>Best training window: 1:30 PM – 4:30 PM.</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy;<span id="currentyear"></span>
+            2026 Tech_Tee Fitness Hub. All rights reserved
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
