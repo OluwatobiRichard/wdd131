@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs | Tech_Tee</title>
+    <meta name="description" content="WDD 131 – Full list of training programs offered at Tech_Tee Fitness Hub, Abuja.">
+    <meta name="author" content="Ojo Olwatobi Richard">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+    <!--Header / Navigation (same as index.html, with links updated for a multi-page site) -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Tech_Tee Fitnes Logo">
+        </div>
+        <button id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <nav id="site-nav">
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="programs.html" aria-current="page">Programs</a></li>
+                <li><a href="index.html#membership">Memberships</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Banner: reuses the same navy block look as the BMI section on
+             index.html, so this page still feels like part of the same site. -->
+        <section class="page-banner">
+            <p class="eyebrow">Engineered Pathways</p>
+            <h1>Training Programs</h1>
+            <p class="page-banner-text">
+                Every program at Tech_Tee is built around a clear goal, a measurable
+                outcome, and a coach who knows how to get you there. Pick the path
+                that matches where you are right now.
+            </p>
+        </section>
+
+        <!-- Full Programs Grid -->
+        <section id="programs" class="programs">
+            <p class="eyebrow">Choose Your Path</p>
+            <h2>All Programs</h2>
+
+            <div class="card-grid">
+                <article class="program-card">
+                    <span class="badge">Strength</span>
+                    <h3>Strength Training</h3>
+                    <p>High-intensity lifting, power racks, and progressive overload tracking.</p>
+                    <ul class="program-stats">
+                        <li><strong>Duration:</strong> 60 min</li>
+                        <li><strong>Intensity:</strong> High</li>
+                        <li><strong>Avg. Burn:</strong> 650 kcal</li>
+                    </ul>
+                    <p class="coach">Coach: Dave Miller, CSCS</p>
+                </article>
+
+                <article class="program-card">
+                    <span class="badge">Coaching</span>
+                    <h3>Personal Training</h3>
+                    <p>Dedicated 1-on-1 coaching, personalized nutrition plans, and milestone assessments.</p>
+                    <ul class="program-stats">
+                        <li><strong>Duration:</strong> 45 min</li>
+                        <li><strong>Intensity:</strong> Precision</li>
+                        <li><strong>Avg. Burn:</strong> 520 kcal</li>
+                    </ul>
+                    <p class="coach">Coach: Dr. Elena Santos, PT</p>
+                </article>
+
+                <article class="program-card">
+                    <span class="badge">Cardio</span>
+                    <h3>Cardio Training</h3>
+                    <p>HIIT circuits, heart-rate zone training, and endurance conditioning.</p>
+                    <ul class="program-stats">
+                        <li><strong>Duration:</strong> 50 min</li>
+                        <li><strong>Intensity:</strong> Aerobic Peak</li>
+                        <li><strong>Avg. Burn:</strong> 820 kcal</li>
+                    </ul>
+                    <p class="coach">Coach: Jordan Lee, Endurance Specialist</p>
+                </article>
+
+                <article class="program-card">
+                    <span class="badge">Group Class</span>
+                    <h3>Group HIIT</h3>
+                    <p>Fast-paced, team-energy interval circuits that mix cardio and bodyweight strength.</p>
+                    <ul class="program-stats">
+                        <li><strong>Duration:</strong> 40 min</li>
+                        <li><strong>Intensity:</strong> Very High</li>
+                        <li><strong>Avg. Burn:</strong> 700 kcal</li>
+                    </ul>
+                    <p class="coach">Coach: Priscilla Okoye, Group Fitness</p>
+                </article>
+
+                <article class="program-card">
+                    <span class="badge">Mobility</span>
+                    <h3>Yoga &amp; Mobility</h3>
+                    <p>Guided flexibility, breathwork, and joint-mobility sessions to speed up recovery.</p>
+                    <ul class="program-stats">
+                        <li><strong>Duration:</strong> 45 min</li>
+                        <li><strong>Intensity:</strong> Low</li>
+                        <li><strong>Avg. Burn:</strong> 220 kcal</li>
+                    </ul>
+                    <p class="coach">Coach: Amina Bello, RYT-200</p>
+                </article>
+
+                <article class="program-card">
+                    <span class="badge">Wellness</span>
+                    <h3>Senior Fitness</h3>
+                    <p>Low-impact strength and balance training designed around long-term joint health.</p>
+                    <ul class="program-stats">
+                        <li><strong>Duration:</strong> 35 min</li>
+                        <li><strong>Intensity:</strong> Moderate</li>
+                        <li><strong>Avg. Burn:</strong> 280 kcal</li>
+                    </ul>
+                    <p class="coach">Coach: Dave Miller, CSCS</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- How It Works — reuses the exact same .about-cards / .feature-card
+             classes already defined in style.css, so no new CSS is needed here. -->
+        <section class="about">
+            <div class="about-text">
+                <p class="eyebrow">How It Works</p>
+                <h2>From Assessment to Results</h2>
+                <p>
+                    Every member starts with the same three steps, no matter which
+                    program they choose. It keeps training honest and progress measurable.
+                </p>
+            </div>
+            <div class="about-cards">
+                <article class="feature-card">
+                    <h3>1. Assess</h3>
+                    <p>A baseline fitness and mobility check so your coach knows exactly where you're starting from.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>2. Train</h3>
+                    <p>Structured sessions matched to your chosen program, intensity, and weekly availability.</p>
+                </article>
+                <article class="feature-card feature-card-wide">
+                    <h3>3. Track</h3>
+                    <p>Monthly check-ins and biometric tracking so adjustments happen before plateaus do.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Call To Action -->
+        <section class="cta">
+            <h2>Ready to Start Your Program?</h2>
+            <p>Lock in your membership or talk to a coach about which program fits you best.</p>
+            <div class="hero-button">
+                <a href="index.html#membership" class="btn btn-primary">View Membership Plans</a>
+                <a href="index.html#contact" class="btn btn-secondary">Contact a Coach</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy;<span id="currentyear"></span>
+            2026 Tech_Tee Fitness Hub. All rights reserved
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

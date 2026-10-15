@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech_Tee Fitness Hub</title>
+    <title>Tech_Tee </title>
     <meta name="description" content="WDD 131 – Local Gym Website for Ojo Olwatobi Richard.">
     <meta name="author" content="Ojo Olwatobi Richard">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,10 +12,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/" defer></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" defer></script>
 </head>
-
 
 <body>
     <!--Header / Navigation -->
@@ -23,59 +22,68 @@
         <div class="logo">
             <img src="images/logo.png" alt="Tech_Tee Fitnes Logo">
         </div>
-        <nav>
+        <button id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <nav id="site-nav">
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#programs">Programs</a></li>
-                <li><a href="#membership">memberships</a></li>
+                <li><a href="#programs.html">Programs</a></li>
+                <li><a href="#membership">Memberships</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <a href="#membership" class="btn btn-primary">Join Now</a>
-
     </header>
     <main>
         <!--Hero Section-->
         <section id="home">
-            <picture>
+
+            <picture class="hero-bg">
                 <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
                 <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
-                <img src="images/hero.webp" alt="" width="500" height="250">
+                <img src="images/hero.webp" alt="">
             </picture>
-            <p class="eyebrow">Next-Gen Performance Labs</p>
 
-            <h1>Build Your <span class="highlight">Best Self</span></h1>
+            <!-- Everything below sits on top of the background image -->
+            <div class="hero-content">
+                <p class="eyebrow">Next-Gen Performance Labs</p>
 
-            <p class="hero-text">
-                Transform your mind, body, and endurance with expert coaching,
-                biometric tracking, and cutting-edge facilities engineered for
-                real results.
-            </p>
-            <div class="hero-button">
-                <a href="#membership" class="btn btn-primary">Join Now</a>
-                <a href="#programs" class="btn btn-secondary">Explore Programs</a>
-            </div>
+                <h1>Build Your <span class="highlight">Best Self</span></h1>
 
-            <!--Quick Stats-->
-            <div class="stat-row">
-                <span class="stat-label">Active Candence</span>
-                <span class="stat-value">98.4%</span>
-                <span class="stat-note">Target Milestone Rate</span>
-            </div>
-            <div class="stat-row">
-                <span class="stat-label">Elite Coaching</span>
-                <span class="stat-value">24/7</span>
-                <span class="stat-note">Biomechanic Analysis</span>
-            </div>
-            <div class="stat-row">
-                <span class="stat-label">Recovery Tech</span>
-                <span class="stat-value">Cryo &amp; Hydro</span>
-                <span class="stat-note">Integrated Modalities</span>
-            </div>
-            <div class="stat-row">
-                <span class="stat-label">Current Floor Load</span>
-                <span class="stat-value">64%</span>
-                <span class="stat-note">Main Arena, Metro City</span>
+                <p class="hero-text">
+                    Transform your mind, body, and endurance with expert coaching,
+                    biometric tracking, and cutting-edge facilities engineered for
+                    real results.
+                </p>
+                <div class="hero-button">
+                    <a href="#membership" class="btn btn-primary">Join Now</a>
+                    <a href="#programs" class="btn btn-secondary">Explore Programs</a>
+                </div>
+
+                <!--Quick Stats-->
+                <div class="stat-row">
+                    <span class="stat-label">Active Candence</span>
+                    <span class="stat-value">98.4%</span>
+                    <span class="stat-note">Target Milestone Rate</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Elite Coaching</span>
+                    <span class="stat-value">24/7</span>
+                    <span class="stat-note">Biomechanic Analysis</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Recovery Tech</span>
+                    <span class="stat-value">Cryo &amp; Hydro</span>
+                    <span class="stat-note">Integrated Modalities</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Current Floor Load</span>
+                    <span class="stat-value">64%</span>
+                    <span class="stat-note">Main Arena, Metro City</span>
+                </div>
             </div>
         </section>
 
@@ -89,8 +97,8 @@
                     progressive overload protocols, and biometric feedback, our facility
                     is built for those who treat physical conditioning as an uncompromising craft.
                 </p>
-                <div class="about-number">
-                    <div class="about-number">
+                <div class="about-numbers">
+                    <div class="number-card">
                         <span class="number">1,800+</span>
                         <span class="number-label">Members Trained</span>
                     </div>
@@ -150,7 +158,6 @@
                 </div>
             </form>
         </section>
-
         <!-- Training Programs -->
         <section id="programs" class="programs">
             <p class="eyebrow">Engineered Pathways</p>
@@ -194,7 +201,6 @@
                 </article>
             </div>
         </section>
-
         <!-- Testimonials -->
         <section class="testimonials">
             <p class="eyebrow">Proven Results</p>
@@ -268,7 +274,7 @@
                         </div>
                         <div class="field">
                             <label for="contactPhone">Phone Number *</label>
-                            <input type="tel" id="contactPhone" name="contactPhone" placeholder="1234" required>
+                            <input type="tel" id="contactPhone" name="contactPhone" placeholder="123" required>
                         </div>
                     </div>
 
@@ -329,8 +335,6 @@
             </div>
         </section>
     </main>
-
-    <!--Footer-->
     <footer>
         <p>
             &copy;<span id="currentyear"></span>
